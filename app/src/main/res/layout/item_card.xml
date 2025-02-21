@@ -37,7 +37,7 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Product Image"
                 android:scaleType="centerCrop"
-                android:src="@mipmap/logogrupo_round"
+                android:src="@mipmap/mapaicono"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
