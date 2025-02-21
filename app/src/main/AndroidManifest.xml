@@ -14,7 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GrupoLucky"
         tools:targetApi="31">
-
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:label="@string/title_activity_register"
+            android:theme="@style/Theme.GrupoLucky" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -28,8 +32,7 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true"
-            android:theme="@style/Theme.GrupoLucky.NoActionBar"/>
-
+            android:theme="@style/Theme.GrupoLucky.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
