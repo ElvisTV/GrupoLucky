@@ -18,18 +18,15 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        // Inicializar la base de datos y el DAO
         val database = AppDatabase.getDatabase(applicationContext)
         userDao = database.userDao()
 
-        // Referencias a los elementos del diseño
         val etUsername = findViewById<EditText>(R.id.etUsername)
         val etPassword = findViewById<EditText>(R.id.etPassword)
         val etConfirmPassword = findViewById<EditText>(R.id.etConfirmPassword1)
         val btnRegister = findViewById<Button>(R.id.btnRegister)
         val btnBackToLogin = findViewById<Button>(R.id.btnBackToLogin1)
 
-        // Evento de botón para registrar usuario
         btnRegister.setOnClickListener {
             val username = etUsername.text.toString().trim()
             val password = etPassword.text.toString().trim()
@@ -40,16 +37,14 @@ class RegisterActivity : AppCompatActivity() {
             }
         }
 
-        // Botón para volver a Login
         btnBackToLogin.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
     }
 
-    /**
-     * Función para validar que los campos no estén vacíos y que las contraseñas coincidan.
-     */
+     // Hola grupito lucky, aquí es para validar que los campos no estén vacíos y que las contraseñas coincidan.
+
     private fun validateInput(username: String, password: String, confirmPassword: String): Boolean {
         if (username.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
             Toast.makeText(this, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show()
@@ -69,9 +64,9 @@ class RegisterActivity : AppCompatActivity() {
         return true
     }
 
-    /**
-     * Función para registrar al usuario en la base de datos con la contraseña encriptada.
-     */
+
+    // Hola grupito lucky, aquí es para registrar al usuario en la base de datos con la contraseña encriptada.
+
     private fun registerUser(username: String, password: String) {
         lifecycleScope.launch {
             val existingUser = userDao.getUserByUsername(username)

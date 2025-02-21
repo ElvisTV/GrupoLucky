@@ -19,7 +19,6 @@ class SplashActivity : AppCompatActivity() {
             navigateToMain()
         }
 
-        // Reproducir sonido
         val mediaPlayer = MediaPlayer.create(this, R.raw.fondocielo)
         mediaPlayer.start()
 
