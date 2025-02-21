@@ -75,20 +75,8 @@ class HomeFragment : Fragment() {
             ),
             Phrase(
                 5,
-                "George Eliot",
+                "METRO LA MOLINA",
                 "Código: 409187 - AV. LA MARINA 2500",
-                "--"
-            ),
-            Phrase(
-                6,
-                "Peter Drucker",
-                "Código: 409188 - C. LAS TIENDAS 290",
-                "--"
-            ),
-            Phrase(
-                7,
-                "Napoleon Hill",
-                "Código: 4091890 - AV. LA MOLINA 1068",
                 "--"
             )
         )
