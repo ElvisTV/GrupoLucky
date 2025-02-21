@@ -59,7 +59,7 @@
             android:layout_below="@id/text_frase"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
-            android:src="@mipmap/ic_launcher"
+            android:src="@mipmap/paracamara"
             android:contentDescription="Imagen estática" />
 
         <!-- Botón VISITAR debajo de la imagen -->
@@ -71,7 +71,7 @@
             android:layout_below="@id/static_image"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="#F30D8B"
             android:textColor="@color/black"/>
 
 
