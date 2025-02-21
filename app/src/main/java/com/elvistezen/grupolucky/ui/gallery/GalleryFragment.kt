@@ -39,7 +39,6 @@ class GalleryFragment : Fragment() {
             // Mostrar los datos
             binding!!.textAutor.setText(author)
             binding!!.textFrase.setText(phrase)
-            binding!!.textDetalle.setText(meaning)
         }
 
         return root

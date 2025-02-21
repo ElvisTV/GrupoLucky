@@ -29,83 +29,52 @@
             android:scaleType="centerCrop"
             android:src="@mipmap/mapaicono" />
 
-        <!--    Autor    -->
         <TextView
-            android:id="@+id/text_autor_sn"
+            android:id="@+id/text_autor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/profile_image"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="Autor"
-            android:textAlignment="center"
-            android:textColor="#FF0000"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/text_autor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text_autor_sn"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp" />
-
-        <!--    Frase    -->
-
         <TextView
-            android:id="@+id/text_frase_sn"
+            android:id="@+id/text_frase"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/text_autor"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="Frase"
-            android:textAlignment="center"
-            android:textColor="#FF0000"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/text_frase"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text_frase_sn"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/text_detalle_sn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:id="@+id/static_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_below="@id/text_frase"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:text="Reflexión"
-            android:textAlignment="center"
-            android:textColor="#FF0000"
-            android:textSize="20sp" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="Imagen estática" />
 
-        <TextView
-            android:id="@+id/text_detalle"
-            android:layout_width="match_parent"
+        <!-- Botón VISITAR debajo de la imagen -->
+        <Button
+            android:id="@+id/btn_visitar"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text_detalle_sn"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:text="VISITAR"
+            android:layout_below="@id/static_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+
 
 
 
