@@ -14,9 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GrupoLucky"
         tools:targetApi="31">
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
+
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -27,6 +25,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GrupoLucky.NoActionBar"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
